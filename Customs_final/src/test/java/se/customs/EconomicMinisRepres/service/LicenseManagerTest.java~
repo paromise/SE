@@ -1831,7 +1831,7 @@ public class LicenseManagerTest {
         assertEquals(equal, true);
     }
 
-   /* @Test
+    @Test
     public void testSub_from_license6() {
         System.out.println("sub_from_license6 --> 2 product need different licenses(license exists) Declaration not stub");
         int licNum = 1;
@@ -1861,7 +1861,7 @@ public class LicenseManagerTest {
         ArrayList<Product2> result = instance.sub_from_license(licNum, declID, nationalId);
         boolean equal = compare( result,expResult);
         assertEquals(equal, true);
-    }*/
+    }
     
     private boolean compare(ArrayList<Product2> expResult,ArrayList<Product2> result){
         
