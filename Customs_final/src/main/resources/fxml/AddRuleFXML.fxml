@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="519.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="se.customs.EconomicMinisRepres.UI.AddRuleFXMLCtrl">
+   <children>
+      <Label layoutX="463.0" layoutY="51.0" prefHeight="15.0" prefWidth="41.0" text="نوع کالا" />
+      <Label layoutX="464.0" layoutY="100.0" text="محدوده مقدار" />
+      <Label layoutX="462.0" layoutY="195.0" text="محدوده قیمت" />
+      <Label layoutX="464.0" layoutY="149.0" prefHeight="15.0" prefWidth="27.0" text="واحد" />
+      <TextField fx:id="prodTypeTxtFld" layoutX="258.0" layoutY="46.0" />
+      <TextField fx:id="minAmountTxtFld" layoutX="258.0" layoutY="95.0" promptText="حداقل" />
+      <TextField fx:id="minPriceTxtFld" layoutX="258.0" layoutY="192.0" promptText="دلار" />
+      <TextField fx:id="maxAmountTxtFld" layoutX="56.0" layoutY="95.0" promptText="حداکثر" />
+      <TextField fx:id="maxPriceTxtFld" layoutX="56.0" layoutY="192.0" promptText="دلار" />
+      <Button fx:id="addRequiredLicsBtn" layoutX="259.0" layoutY="403.0" mnemonicParsing="false" onAction="#onAddReqLicsBtn" prefHeight="25.0" prefWidth="171.0" text="افزودن مجوزهای موردنیاز" />
+      <Button fx:id="submitFormBtn" layoutX="58.0" layoutY="463.0" mnemonicParsing="false" onAction="#onSubmitAction" prefHeight="25.0" prefWidth="171.0" text="ثبت" />
+      <Button fx:id="clearFormBtn" layoutX="258.0" layoutY="460.0" mnemonicParsing="false" onAction="#onClearAction" prefHeight="25.0" prefWidth="171.0" text="پاک کردن" />
+      <ChoiceBox fx:id="UnitChcBox" layoutX="259.0" layoutY="144.0" prefHeight="25.0" prefWidth="171.0" />
+      <Label fx:id="errLabel" layoutX="58.0" layoutY="402.0" prefHeight="15.0" prefWidth="171.0" textAlignment="RIGHT" textFill="RED" />
+      <Label fx:id="msgLabel" layoutX="58.0" layoutY="402.0" prefHeight="15.0" prefWidth="171.0" textAlignment="RIGHT" textFill="GREEN" />
+      <Label layoutX="463.0" layoutY="278.0" text="کشور مبدا" />
+      <Label layoutX="463.0" layoutY="317.0" text="نحوه ورود به کشور" />
+      <TextField fx:id="countryTxtFld" layoutX="258.0" layoutY="271.0" />
+      <ChoiceBox fx:id="transWayChcBox" layoutX="258.0" layoutY="313.0" prefHeight="25.0" prefWidth="171.0" />
+      <Label layoutX="462.0" layoutY="364.0" text="شرکت" />
+      <TextField fx:id="companyTxtFld" layoutX="259.0" layoutY="359.0" prefHeight="25.0" prefWidth="171.0" />
+      <Label layoutX="460.0" layoutY="235.0" text="ارزش کل محموله" />
+      <TextField fx:id="totalValTxtFld" layoutX="258.0" layoutY="231.0" promptText="دلار" />
+   </children>
+</AnchorPane>

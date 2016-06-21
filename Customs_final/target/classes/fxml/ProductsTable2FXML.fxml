@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="423.0" prefWidth="1168.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="se.customs.GetLicense.UI.ProductsTable2FXMLCtrl">
+   <children>
+      <TableView fx:id="table" layoutX="-1.0" layoutY="-3.0" prefHeight="248.0" prefWidth="1169.0">
+        <columns>
+            <TableColumn fx:id="numCol" prefWidth="104.0" text="شماره مجوز" />
+            <TableColumn fx:id="nameCol" prefWidth="73.0" text="نام کالا" />
+            <TableColumn fx:id="minWeightCol" prefWidth="133.0" text="حداقل وزن کالا" />
+            <TableColumn fx:id="maxWeightCol" prefWidth="122.0" text="حداکثر وزن کالا" />
+            <TableColumn fx:id="minNumCol" prefWidth="129.0" text="حداقل تعداد کالا" />
+            <TableColumn fx:id="maxNumCol" prefWidth="118.0" text="حداکثر تعداد کالا" />            
+            <TableColumn fx:id="companyCol" prefWidth="137.0" text="شرکت تولید کننده" />
+            <TableColumn fx:id="minUnitPriceCol" prefWidth="155.0" text="حداقل قیمت واحد کالا" />
+            <TableColumn fx:id="maxUnitPriceCol" prefWidth="186.0" text="حداکثر قیمت واحد کالا" />
+        </columns>
+      </TableView>
+      <TextField fx:id="nameTxtFld" layoutX="8.0" layoutY="251.0" prefHeight="25.0" prefWidth="87.0" promptText="نام کالا" />
+      <TextField fx:id="maxWeightTxtFld" layoutX="7.0" layoutY="285.0" prefHeight="25.0" prefWidth="133.0" promptText="مقدار" />
+      <TextField fx:id="CompanyTxtFld" layoutX="111.0" layoutY="250.0" prefHeight="25.0" prefWidth="87.0" promptText="شرکت" />
+      <TextField fx:id="maxUnitPriceTxtFld" layoutX="4.0" layoutY="318.0" prefHeight="25.0" prefWidth="133.0" promptText="حداکثر قیمت واحد" />
+      <Button fx:id="addBtn" layoutX="536.0" layoutY="351.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="150.0" text="افزودن" />
+      <Label fx:id="errLabel" layoutX="11.0" layoutY="380.0" prefHeight="25.0" prefWidth="370.0" textAlignment="RIGHT" textFill="RED" visible="false" />
+      <TextField fx:id="minUnitPriceTxtFld" layoutX="143.0" layoutY="318.0" prefHeight="25.0" prefWidth="150.0" promptText="حداقل قیمت واحد" />
+      <Button fx:id="exitBtn" layoutX="383.0" layoutY="355.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="107.0" text="خروج" />
+   </children>
+</AnchorPane>

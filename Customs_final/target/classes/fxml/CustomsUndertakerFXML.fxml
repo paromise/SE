@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="CustomsUndertakerAnchorPane" prefHeight="656.0" prefWidth="673.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="se.customs.CustomsUndertaker.UI.CustomsUndertakerFXMLController">
+    <children>
+        <Button fx:id="addLicensesBtn" layoutX="334.0" layoutY="484.0" onAction="#onAddLicsBtnAction" prefHeight="25.0" prefWidth="142.0" text="افزودن شماره مجوزها" />
+      <Label layoutX="500.0" layoutY="121.0" prefHeight="35.0" prefWidth="89.0" text="شناسه ملی">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </Label>
+      <Label layoutX="499.0" layoutY="206.0" text="نام خانوادگی">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </Label>
+      <Label layoutX="494.0" layoutY="301.0" text="نحوه ورود به کشور">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </Label>
+      <Label layoutX="502.0" layoutY="252.0" text="کشور مبدا">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </Label>
+      <TextField fx:id="nationalIdTxtFld" layoutX="298.0" layoutY="128.0" />
+      <TextField fx:id="familyTxtFld" layoutX="299.0" layoutY="210.0" />
+      <TextField fx:id="srcCountryTxtFld" layoutX="298.0" layoutY="256.0" />
+      <ChoiceBox fx:id="transWayChcBox" layoutX="299.0" layoutY="305.0" prefHeight="25.0" prefWidth="171.0" />
+      <Button fx:id="clrBtn" layoutX="168.0" layoutY="485.0" mnemonicParsing="false" onAction="#onClearBtnAction" prefHeight="25.0" prefWidth="142.0" text="پاک کردن" />
+      <TextField fx:id="nameTxtFld" layoutX="299.0" layoutY="170.0" />
+      <Label layoutX="502.0" layoutY="165.0" text="نام">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </Label>
+      <Label fx:id="errLabel" layoutX="93.0" layoutY="580.0" prefHeight="35.0" prefWidth="376.0" textFill="#ff0b0b" />
+      <Button fx:id="addProductsBtn" layoutX="301.0" layoutY="353.0" mnemonicParsing="false" onAction="#onAddProdsBtnAction" prefHeight="35.0" prefWidth="171.0" text="افزودن کالاها" />
+      <Label fx:id="declNum" layoutX="98.0" layoutY="405.0" prefHeight="25.0" prefWidth="77.0" textAlignment="RIGHT" textFill="#00da57">
+         <font>
+            <Font size="41.0" />
+         </font></Label>
+      <Label fx:id="declNumLbl" layoutX="158.0" layoutY="423.0" prefHeight="25.0" prefWidth="152.0" text="شماره اظهارنامه ثبتی شما:" textFill="#20864e" visible="false" />
+    </children>
+</AnchorPane>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="452.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="se.customs.EconomicMinisRepres.UI.AddReqLicTypeFXMLCtrl">
+   <children>
+      <TableView fx:id="licTypeTable" layoutX="5.0" prefHeight="297.0" prefWidth="443.0">
+        <columns>
+          <TableColumn fx:id="licTypeCol" prefWidth="219.0" text="نوع مجوز" />
+            <TableColumn fx:id="licUndertakerCol" prefWidth="219.0" text="مسئول مربوطه" />
+        </columns>
+      </TableView>
+      <Button fx:id="delLicTypeBtn" layoutX="317.0" layoutY="317.0" mnemonicParsing="false" onAction="#onDelBtnAction" prefHeight="25.0" prefWidth="57.0" text="حذف" />
+      <Label fx:id="errLabel" layoutX="12.0" layoutY="350.0" prefHeight="37.0" prefWidth="437.0" textAlignment="RIGHT" textFill="RED" />
+      <Button fx:id="addLicTypeBtn" layoutX="253.0" layoutY="317.0" mnemonicParsing="false" onAction="#onAddBtnAction" text="افزودن" />
+      <ChoiceBox fx:id="LicTypeChcBox" layoutX="90.0" layoutY="317.0" prefWidth="150.0" />
+   </children>
+</AnchorPane>

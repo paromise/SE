@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="443.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="se.customs.CustomsUndertaker.UI.ProductsTableFXMLCtrl">
+   <children>
+      <TableView fx:id="table" layoutX="-1.0" layoutY="-3.0" prefHeight="307.0" prefWidth="600.0">
+        <columns>
+            <TableColumn fx:id="nameCol" prefWidth="180.0" text="نام کالا" />
+            <TableColumn fx:id="amountCol" prefWidth="113.0" text="مقدار کالا" />
+            <TableColumn fx:id="companyCol" prefWidth="181.0" text="شرکت تولید کننده" />
+            <TableColumn fx:id="unitPriceCol" prefWidth="125.0" text="قیمت واحد کالا" />
+        </columns>
+      </TableView>
+      <TextField fx:id="nameTxtFld" layoutX="12.0" layoutY="322.0" prefHeight="25.0" prefWidth="87.0" promptText="نام کالا" />
+      <TextField fx:id="amountTxtFld" layoutX="217.0" layoutY="322.0" prefHeight="25.0" prefWidth="70.0" promptText="مقدار" />
+      <TextField fx:id="CompanyTxtFld" layoutX="395.0" layoutY="322.0" prefHeight="25.0" prefWidth="95.0" promptText="شرکت" />
+      <TextField fx:id="unitPriceTxtFld" layoutX="496.0" layoutY="322.0" prefHeight="25.0" prefWidth="95.0" promptText="قیمت واحد" />
+      <Button fx:id="addBtn" layoutX="533.0" layoutY="359.0" mnemonicParsing="false" onAction="#onAddBtnAction" text="افزودن" />
+      <ChoiceBox fx:id="UnitChcBox" layoutX="292.0" layoutY="322.0" prefHeight="25.0" prefWidth="95.0" />
+      <ChoiceBox fx:id="prodTypeChcBox" layoutX="104.0" layoutY="322.0" prefHeight="25.0" prefWidth="110.0" />
+      <Label layoutX="103.0" layoutY="359.0" prefHeight="25.0" prefWidth="142.0" text="ارزش کل کالا ها به دلار " />
+      <Label fx:id="totalPriceLbl" layoutX="12.0" layoutY="356.0" prefHeight="25.0" prefWidth="87.0" text="0" textAlignment="CENTER" />
+      <Label fx:id="errLabel" layoutX="12.0" layoutY="404.0" prefHeight="25.0" prefWidth="575.0" />
+      <Button fx:id="delBtn" layoutX="533.0" layoutY="393.0" mnemonicParsing="false" onAction="#onDelBtnAction" prefHeight="25.0" prefWidth="57.0" text="حذف" />
+   </children>
+</AnchorPane>

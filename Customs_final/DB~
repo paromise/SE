@@ -1,0 +1,69 @@
+CREATE TABLE `Product` (
+    `proID` INT(10) NOT NULL AUTO_INCREMENT,
+    `name` VARCHAR(50) NOT NULL,
+    `type` VARCHAR(50) NOT NULL,
+    `company` VARCHAR(50) NOT NULL,
+    `number` INT(50) NOT NULL,
+    `unitPrice` INT(50) NOT NULL,
+    `weight` FLOAT NOT NULL,
+    `DECLID` INT(10) NOT NULL,
+     PRIMARY KEY (`proID`),
+     FOREIGN KEY (`DECLID`) 
+             REFERENCES `Declaration` (`declID`) ON DELETE CASCADE ON UPDATE CASCADE
+
+);
+
+CREATE TABLE `Product2` (
+    `proID` INT(10) NOT NULL AUTO_INCREMENT,
+    `name` VARCHAR(50) NOT NULL,
+    `company` VARCHAR(50) ,
+    `min_weight` FLOAT,
+    `max_weight` FLOAT,
+    `min_number` INT(50) ,
+    `max_number` INT(50), 
+    `min_unitPrice` INT(50),
+    `max_unitPrice` INT(50),
+    `licID` INT(10) NOT NULL,
+     PRIMARY KEY (`proID`),
+     FOREIGN KEY (`licID`) 
+             REFERENCES `License` (`licNum`)
+
+);
+
+
+CREATE TABLE `Declaration` (
+    `declID` INT(10) NOT NULL AUTO_INCREMENT,
+    `name` VARCHAR(50) NOT NULL,
+    `family` VARCHAR(50) NOT NULL,
+    `nationalId` VARCHAR(10) NOT NULL,
+    `declarationDate` VARCHAR(10) NOT NULL,
+    `srcCountry` VARCHAR(50) NOT NULL,
+    `totalValue` FLOAT NOT NULL,
+    `transWay` VARCHAR(50) NOT NULL,
+     PRIMARY KEY (`declID`)
+);
+
+CREATE TABLE `License` (
+    `licNum` INT(10) NOT NULL AUTO_INCREMENT,
+    `merchantID` VARCHAR(10) NOT NULL,
+    `dueDate` VARCHAR(50) NOT NULL,
+    `licName` VARCHAR(50) NOT NULL,
+    `srcCountry` VARCHAR(50),
+    `transWay` VARCHAR(50),
+     PRIMARY KEY (`licNum`)
+);
+
+CREATE TABLE `CustomsUser` (
+    `username` VARCHAR(50) NOT NULL,
+    `password` VARCHAR(50) NOT NULL,
+     PRIMARY KEY (`username`)
+);'
+
+CREATE TABLE `Rule` (
+    `rid` INT(10) NOT NULL AUTO_INCREMENT,
+    `prodType` VARCHAR(50) NOT NULL,
+    `licType` VARCHAR(50) NOT NULL,
+     PRIMARY KEY (`rid`)
+);
+
+insert into License (`merchantID`,`dueDate`,`licName`,`srcCountry`,`transWay`) VALUES (102,`22`,`behdasht`,`iran`,`havaii`);

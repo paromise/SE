@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="433.0" prefWidth="1112.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="se.customs.EconomicMinisRepres.UI.RuleTableFXMLCtrl">
+   <children>
+      <TableView fx:id="ruleTable" editable="true" layoutY="1.0" prefHeight="386.0" prefWidth="1149.0">
+        <columns>
+          <TableColumn fx:id="licNumCol" prefWidth="76.0" text="شماره " />
+          <TableColumn fx:id="prodTypeCol" prefWidth="112.0" text="نوع کالا" />
+            <TableColumn fx:id="minAmountCol" prefWidth="119.0" text="حداقل مقدار" />
+            <TableColumn fx:id="maxAmountCol" prefWidth="128.0" text="حداکثر مقدار" />
+            <TableColumn fx:id="minValCol" prefWidth="139.0" text="حداقل ارزش" />
+            <TableColumn fx:id="maxValCol" prefWidth="125.0" text="حداکثر ارزش" />
+            <TableColumn fx:id="srcCountryCol" prefWidth="113.0" text="کشور مبدأ" />
+            <TableColumn fx:id="companyCol" prefWidth="123.0" text="شرکت " />
+            <TableColumn fx:id="transWayCol" prefWidth="79.0" text="راه انتقال" />
+            <TableColumn fx:id="totalValCol" prefWidth="134.0" text="ارزش کل" />
+        </columns>
+      </TableView>
+      <Label fx:id="errLabel" layoutX="29.0" layoutY="403.0" prefHeight="15.0" prefWidth="586.0" textAlignment="RIGHT" textFill="RED" />
+      <Button fx:id="delRuleBtn" layoutX="940.0" layoutY="397.0" mnemonicParsing="false" onAction="#onDelBtnAction" prefHeight="25.0" prefWidth="77.0" text="حذف" />
+      <Button fx:id="reqLicsBtn" layoutX="1037.0" layoutY="397.0" mnemonicParsing="false" onAction="#onShowLicsBtnAction" prefHeight="25.0" prefWidth="77.0" text="مجوزها " />
+   </children>
+</AnchorPane>

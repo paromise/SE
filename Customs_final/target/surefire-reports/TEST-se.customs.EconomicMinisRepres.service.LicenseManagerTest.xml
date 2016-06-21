@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="36" failures="1" name="se.customs.EconomicMinisRepres.service.LicenseManagerTest" time="1.787" errors="0" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/home/parmiss/jdk1.8.0_91/jre/lib/amd64"/>
+    <property name="java.vm.version" value="25.91-b14"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="test" value="se.customs.EconomicMinisRepres.service.LicenseManagerTest"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/home/parmiss/NetBeansProjects/Customs_final"/>
+    <property name="java.runtime.version" value="1.8.0_91-b14"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/home/parmiss/jdk1.8.0_91/jre/lib/endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Linux"/>
+    <property name="maven.ext.class.path" value="/home/parmiss/netbeans-8.1/java/maven-nblib/netbeans-eventspy.jar"/>
+    <property name="classworlds.conf" value="/home/parmiss/netbeans-8.1/java/maven/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/home/parmiss/jdk1.8.0_91/jre/lib/amd64:/home/parmiss/jdk1.8.0_91/jre/lib/i386::/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="3.13.0-46-generic"/>
+    <property name="user.home" value="/home/parmiss"/>
+    <property name="user.timezone" value="Asia/Tehran"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="parmiss"/>
+    <property name="java.class.path" value="/home/parmiss/netbeans-8.1/java/maven/boot/plexus-classworlds-2.4.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/home/parmiss/jdk1.8.0_91/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dtest=se.customs.EconomicMinisRepres.service.LicenseManagerTest -Dmaven.ext.class.path=/home/parmiss/netbeans-8.1/java/maven-nblib/netbeans-eventspy.jar surefire:test"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_91"/>
+    <property name="java.ext.dirs" value="/home/parmiss/jdk1.8.0_91/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="securerandom.source" value="file:/dev/./urandom"/>
+    <property name="sun.boot.class.path" value="/home/parmiss/jdk1.8.0_91/jre/lib/resources.jar:/home/parmiss/jdk1.8.0_91/jre/lib/rt.jar:/home/parmiss/jdk1.8.0_91/jre/lib/sunrsasign.jar:/home/parmiss/jdk1.8.0_91/jre/lib/jsse.jar:/home/parmiss/jdk1.8.0_91/jre/lib/jce.jar:/home/parmiss/jdk1.8.0_91/jre/lib/charsets.jar:/home/parmiss/jdk1.8.0_91/jre/lib/jfr.jar:/home/parmiss/jdk1.8.0_91/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/home/parmiss/netbeans-8.1/java/maven"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="gnome"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase classname="se.customs.EconomicMinisRepres.service.LicenseManagerTest" name="testGetRequiredLicenses" time="0.011"/>
+  <testcase classname="se.customs.EconomicMinisRepres.service.LicenseManagerTest" name="testGetRequiredLicenses2" time="0.007"/>
+  <testcase classname="se.customs.EconomicMinisRepres.service.LicenseManagerTest" name="testGetRequiredLicenses3" time="0"/>
+  <testcase classname="se.customs.EconomicMinisRepres.service.LicenseManagerTest" name="testGetRequiredLicenses4" time="0"/>
+  <testcase classname="se.customs.EconomicMinisRepres.service.LicenseManagerTest" name="testGetRequiredLicenses5" time="0"/>
+  <testcase classname="se.customs.EconomicMinisRepres.service.LicenseManagerTest" name="testGetRequiredLicenses6" time="0"/>
+  <testcase classname="se.customs.EconomicMinisRepres.service.LicenseManagerTest" name="testGetRequiredLicenses7" time="0"/>
+  <testcase classname="se.customs.EconomicMinisRepres.service.LicenseManagerTest" name="testGetRequiredLicenses8" time="0"/>
+  <testcase classname="se.customs.EconomicMinisRepres.service.LicenseManagerTest" name="testGetRequiredLicenses9" time="0"/>
+  <testcase classname="se.customs.EconomicMinisRepres.service.LicenseManagerTest" name="testSub_from_license1" time="1.061"/>
+  <testcase classname="se.customs.EconomicMinisRepres.service.LicenseManagerTest" name="testSub_from_license2" time="0.042"/>
+  <testcase classname="se.customs.EconomicMinisRepres.service.LicenseManagerTest" name="testSub_from_license3" time="0.018"/>
+  <testcase classname="se.customs.EconomicMinisRepres.service.LicenseManagerTest" name="testSub_from_license4" time="0.001"/>
+  <testcase classname="se.customs.EconomicMinisRepres.service.LicenseManagerTest" name="testSub_from_license5" time="0.016"/>
+  <testcase classname="se.customs.EconomicMinisRepres.service.LicenseManagerTest" name="testSub_from_license6" time="0.412">
+    <failure message="expected:&lt;false&gt; but was:&lt;true&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;false&gt; but was:&lt;true&gt;
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at se.customs.EconomicMinisRepres.service.LicenseManagerTest.testSub_from_license6(LicenseManagerTest.java:1863)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:53)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:123)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:104)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+</failure>
+    <system-out>sub_from_license6 --&gt; 2 product need different licenses(license exists) Declaration not stub
+findingAhan
+is required findingAhan
+Berenj
+Ahan
+foundAhan
+Berenj : 200.0 / Berenj : 1200.0
+true false
+</system-out>
+    <system-err>org.hibernate.exception.ConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails (`se`.`Product2`, CONSTRAINT `Product2_ibfk_1` FOREIGN KEY (`licID`) REFERENCES `License` (`licNum`) ON DELETE CASCADE ON UPDATE CASCADE)
+	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:74)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:47)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:125)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:110)
+	at org.hibernate.engine.jdbc.internal.proxy.AbstractStatementProxyHandler.continueInvocation(AbstractStatementProxyHandler.java:129)
+	at org.hibernate.engine.jdbc.internal.proxy.AbstractProxyHandler.invoke(AbstractProxyHandler.java:81)
+	at com.sun.proxy.$Proxy20.executeUpdate(Unknown Source)
+	at org.hibernate.id.IdentityGenerator$GetGeneratedKeysDelegate.executeAndExtract(IdentityGenerator.java:96)
+	at org.hibernate.id.insert.AbstractReturningDelegate.performInsert(AbstractReturningDelegate.java:55)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:2757)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3268)
+	at org.hibernate.action.internal.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:78)
+	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:272)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:304)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:195)
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:128)
+	at org.hibernate.event.internal.DefaultSaveOrUpdateEventListener.saveWithGeneratedOrRequestedId(DefaultSaveOrUpdateEventListener.java:204)
+	at org.hibernate.event.internal.DefaultSaveOrUpdateEventListener.entityIsTransient(DefaultSaveOrUpdateEventListener.java:189)
+	at org.hibernate.event.internal.DefaultSaveOrUpdateEventListener.performSaveOrUpdate(DefaultSaveOrUpdateEventListener.java:114)
+	at org.hibernate.event.internal.DefaultSaveOrUpdateEventListener.onSaveOrUpdate(DefaultSaveOrUpdateEventListener.java:90)
+	at org.hibernate.internal.SessionImpl.fireSaveOrUpdate(SessionImpl.java:615)
+	at org.hibernate.internal.SessionImpl.saveOrUpdate(SessionImpl.java:608)
+	at org.hibernate.internal.SessionImpl.saveOrUpdate(SessionImpl.java:604)
+	at se.customs.LicenseManagement.dao.Product2DAO.updateProduct(Product2DAO.java:96)
+	at se.customs.EconomicMinisRepres.service.LicenseManager.sub_from_license(LicenseManager.java:272)
+	at se.customs.EconomicMinisRepres.service.LicenseManagerTest.testSub_from_license6(LicenseManagerTest.java:1861)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:53)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:123)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:104)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails (`se`.`Product2`, CONSTRAINT `Product2_ibfk_1` FOREIGN KEY (`licID`) REFERENCES `License` (`licNum`) ON DELETE CASCADE ON UPDATE CASCADE)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.Util.getInstance(Util.java:386)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1040)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4120)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4052)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2503)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2664)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2794)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:2155)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2458)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2375)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2359)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.hibernate.engine.jdbc.internal.proxy.AbstractStatementProxyHandler.continueInvocation(AbstractStatementProxyHandler.java:122)
+	... 54 more
+</system-err>
+  </testcase>
+  <testcase classname="se.customs.EconomicMinisRepres.service.LicenseManagerTest" name="testGetRequiredLicenses10" time="0"/>
+  <testcase classname="se.customs.EconomicMinisRepres.service.LicenseManagerTest" name="testGetRequiredLicenses11" time="0"/>
+  <testcase classname="se.customs.EconomicMinisRepres.service.LicenseManagerTest" name="testGetRequiredLicenses12" time="0"/>
+  <testcase classname="se.customs.EconomicMinisRepres.service.LicenseManagerTest" name="testGetRequiredLicenses13" time="0"/>
+  <testcase classname="se.customs.EconomicMinisRepres.service.LicenseManagerTest" name="testGetRequiredLicenses14" time="0.091"/>
+  <testcase classname="se.customs.EconomicMinisRepres.service.LicenseManagerTest" name="testGetRequiredLicenses15" time="0.001"/>
+  <testcase classname="se.customs.EconomicMinisRepres.service.LicenseManagerTest" name="testGetRequiredLicenses16" time="0"/>
+  <testcase classname="se.customs.EconomicMinisRepres.service.LicenseManagerTest" name="testGetRequiredLicenses17" time="0.001"/>
+  <testcase classname="se.customs.EconomicMinisRepres.service.LicenseManagerTest" name="testGetRequiredLicenses18" time="0"/>
+  <testcase classname="se.customs.EconomicMinisRepres.service.LicenseManagerTest" name="testGetRequiredLicenses19" time="0.001"/>
+  <testcase classname="se.customs.EconomicMinisRepres.service.LicenseManagerTest" name="testGetRequiredLicenses20" time="0.007"/>
+  <testcase classname="se.customs.EconomicMinisRepres.service.LicenseManagerTest" name="testGetRequiredLicenses21" time="0.001"/>
+  <testcase classname="se.customs.EconomicMinisRepres.service.LicenseManagerTest" name="testGetRequiredLicenses22" time="0"/>
+  <testcase classname="se.customs.EconomicMinisRepres.service.LicenseManagerTest" name="testGetRequiredLicenses23" time="0.001"/>
+  <testcase classname="se.customs.EconomicMinisRepres.service.LicenseManagerTest" name="testGetRequiredLicenses24" time="0.001"/>
+  <testcase classname="se.customs.EconomicMinisRepres.service.LicenseManagerTest" name="testGetRequiredLicenses25" time="0"/>
+  <testcase classname="se.customs.EconomicMinisRepres.service.LicenseManagerTest" name="testGetRequiredLicenses26" time="0.011"/>
+  <testcase classname="se.customs.EconomicMinisRepres.service.LicenseManagerTest" name="testGetRequiredLicenses27" time="0.013"/>
+  <testcase classname="se.customs.EconomicMinisRepres.service.LicenseManagerTest" name="testGetRequiredLicenses28" time="0.018"/>
+  <testcase classname="se.customs.EconomicMinisRepres.service.LicenseManagerTest" name="testGetRequiredLicenses29" time="0.001"/>
+  <testcase classname="se.customs.EconomicMinisRepres.service.LicenseManagerTest" name="testGetRequiredLicenses31" time="0"/>
+</testsuite>

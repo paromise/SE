@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="304.0" prefWidth="518.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="se.customs.CustomsUndertaker.UI.CUmenuFXMLCtrl">
+   <children>
+      <Button fx:id="completeDeclBtn" layoutX="82.0" layoutY="163.0" mnemonicParsing="false" onAction="#onCompleteDeclAction" text="پیگیری اظهارنامه قبلی" />
+      <Button fx:id="newDeclBtn" layoutX="298.0" layoutY="130.0" mnemonicParsing="false" onAction="#onNewDeclAction" text="ایجاد اظهارنامه جدید" />
+      <TextField fx:id="declNumTxtFld" layoutX="82.0" layoutY="130.0" prefHeight="25.0" prefWidth="136.0" promptText="شماره اظهارنامه" />
+      <Label fx:id="errLabel" layoutX="155.0" layoutY="236.0" prefHeight="25.0" prefWidth="193.0" textFill="#e8270a" />
+   </children>
+</AnchorPane>

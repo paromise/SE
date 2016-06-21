@@ -1,0 +1,105 @@
+CREATE TABLE `Product` (
+    `proID` INT(10) NOT NULL AUTO_INCREMENT,
+    `name` VARCHAR(50) NOT NULL,
+    `type` VARCHAR(50) NOT NULL,
+    `company` VARCHAR(50) NOT NULL,
+    `amountUnit`  VARCHAR(50) NOT NULL,
+    `unitPrice` INT(50) NOT NULL,
+    `amount` FLOAT NOT NULL,
+    `DECLID` INT(10) NOT NULL,
+     PRIMARY KEY (`proID`),
+     FOREIGN KEY (`DECLID`) 
+             REFERENCES `Declaration` (`declID`) ON DELETE CASCADE ON UPDATE CASCADE
+
+);
+
+CREATE TABLE `LicenseType` (
+    `ruleID` INT(10) NOT NULL,
+    `primLicTypeID` INT(10) NOT NULL,
+     PRIMARY KEY (`primLicTypeID`,`ruleID`),
+     FOREIGN KEY (`ruleID`) 
+             REFERENCES `Rule` (`ruleID`) ON DELETE CASCADE ON UPDATE CASCADE,
+     FOREIGN KEY (`primLicTypeID`) 
+             REFERENCES `PrimaryLicType` (`primLicTypeID`) ON DELETE CASCADE ON UPDATE CASCADE
+);
+
+CREATE TABLE `PrimaryLicType` (
+    `undertaker` VARCHAR(50) NOT NULL,
+    `name` VARCHAR(50) NOT NULL,
+    `primLicTypeID` INT(10) NOT NULL AUTO_INCREMENT,
+     PRIMARY KEY (`primLicTypeID`)
+);
+
+CREATE TABLE `Product2` (
+    `proID` INT(10) NOT NULL AUTO_INCREMENT,
+    `name` VARCHAR(50) NOT NULL,
+    `company` VARCHAR(50) ,
+    `max_weight` FLOAT,
+    `min_unitPrice` INT(50),
+    `max_unitPrice` INT(50),
+    `licID` INT(10) NOT NULL,
+     PRIMARY KEY (`proID`),
+     FOREIGN KEY (`licID`) 
+	     REFERENCES `License` (`licNum`) ON DELETE CASCADE ON UPDATE CASCADE
+
+);
+
+
+CREATE TABLE `Declaration` (
+    `declID` INT(10) NOT NULL AUTO_INCREMENT,
+    `name` VARCHAR(50) NOT NULL,
+    `family` VARCHAR(50) NOT NULL,
+    `nationalId` VARCHAR(10) NOT NULL,
+    `declarationDate` VARCHAR(10) NOT NULL,
+    `srcCountry` VARCHAR(50) NOT NULL,
+    `totalValue` FLOAT NOT NULL,
+    `transWay` VARCHAR(50) NOT NULL,
+    `validity` VARCHAR(50) NOT NULL,
+     PRIMARY KEY (`declID`)
+);
+
+CREATE TABLE `License` (
+    `licNum` INT(10) NOT NULL AUTO_INCREMENT,
+    `merchantID` VARCHAR(10) NOT NULL,
+    `dueDate` VARCHAR(50) NOT NULL,
+    `licName` VARCHAR(50) NOT NULL,
+    `srcCountry` VARCHAR(50),
+    `transWay` VARCHAR(50),
+     PRIMARY KEY (`licNum`)
+);
+
+
+CREATE TABLE `Role` (
+    `userRole` VARCHAR(50) NOT NULL,
+    PRIMARY KEY (`userRole`)
+);
+
+CREATE TABLE `CustomsUser` (
+    `username` VARCHAR(50) NOT NULL,
+    `password` VARCHAR(50) NOT NULL,
+    `role` VARCHAR(50) NOT NULL,
+    PRIMARY KEY (`username`),
+    FOREIGN KEY (`role`) 
+	REFERENCES `Role` (`userRole`) ON DELETE CASCADE ON UPDATE CASCADE
+
+);
+
+CREATE TABLE `Rule` (
+    `ruleID` INT(10) NOT NULL AUTO_INCREMENT,
+    `prodType` VARCHAR(50) NOT NULL,
+    `minAmount` INT(10) ,
+    `minPrice` INT(10) ,
+    `maxAmount` INT(10) ,
+    `maxPrice` INT(10) ,
+    `unit` VARCHAR(50) ,
+    `country` VARCHAR(50) ,
+    `transWay` VARCHAR(50),
+    `company` VARCHAR(50) ,
+     PRIMARY KEY (`ruleID`)
+);
+
+insert into License (`merchantID`,`dueDate`,`licName`,`srcCountry`,`transWay`) VALUES (102,`22`,`behdasht`,`iran`,`havaii`);
+
+insert into Role  VALUES ('CustomsUndertaker');
+insert into Role VALUES ('EconomicMinisRepres');
+insert into Role VALUES ('LicenseUndertaker');

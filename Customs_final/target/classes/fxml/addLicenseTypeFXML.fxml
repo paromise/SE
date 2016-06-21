@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="427.0" prefWidth="526.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="se.customs.EconomicMinisRepres.UI.AddLicenseTypeFXMLCtrl">
+   <children>
+      <TableView fx:id="licTypeTable" layoutX="-2.0" prefHeight="297.0" prefWidth="526.0">
+        <columns>
+            <TableColumn fx:id="licTypeCol" prefWidth="261.0" text="نوع مجوز" />
+            <TableColumn fx:id="licUndertakerCol" prefWidth="257.0" text="مسئول مربوطه" />
+        </columns>
+      </TableView>
+      <TextField fx:id="licTypeTxtFld" layoutX="23.0" layoutY="321.0" promptText="نوع مجوز" />
+      <Button fx:id="addLicTypeBtn" layoutX="383.0" layoutY="321.0" mnemonicParsing="false" onAction="#onAddBtnAction" text="افزودن" />
+      <Button fx:id="delLicTypeBtn" layoutX="447.0" layoutY="321.0" mnemonicParsing="false" onAction="#onDelBtnAction" prefHeight="25.0" prefWidth="57.0" text="حذف" />
+      <Label fx:id="errLabel" layoutX="25.0" layoutY="365.0" prefHeight="42.0" prefWidth="346.0" textAlignment="RIGHT" textFill="RED" />
+      <ChoiceBox fx:id="undertakerChcBox" layoutX="215.0" layoutY="321.0" prefWidth="150.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="se.customs.CustomsUndertaker.UI.ShowDeclDetailsFXMLCtrl">
+   <children>
+      <Label layoutX="449.0" layoutY="46.0" text="شناسه ملی تاجر">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Label>
+      <Label fx:id="natIDLbl" layoutX="294.0" layoutY="46.0" prefHeight="15.0" prefWidth="120.0" />
+      <Label layoutX="450.0" layoutY="82.0" text="نام">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Label>
+      <Label fx:id="nameLbl" layoutX="294.0" layoutY="82.0" prefHeight="15.0" prefWidth="120.0" />
+      <Label layoutX="448.0" layoutY="121.0" text="نام خانوادگی">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Label>
+      <Label fx:id="familyLbl" layoutX="294.0" layoutY="121.0" prefHeight="15.0" prefWidth="120.0" />
+      <Label layoutX="448.0" layoutY="167.0" text="تاریخ اظهار">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Label>
+      <Label fx:id="declDateLbl" layoutX="294.0" layoutY="167.0" prefHeight="15.0" prefWidth="120.0" />
+      <Label layoutX="448.0" layoutY="216.0" text="کشور مبدأ">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Label>
+      <Label fx:id="srcCountryLbl" layoutX="294.0" layoutY="216.0" prefHeight="15.0" prefWidth="120.0" />
+      <Label layoutX="448.0" layoutY="262.0" text="نحوه ورود به کشور">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Label>
+      <Label fx:id="transWayLbl" layoutX="294.0" layoutY="264.0" prefHeight="15.0" prefWidth="120.0" />
+      <Button fx:id="showProdsBtn" layoutX="304.0" layoutY="309.0" mnemonicParsing="false" onAction="#onShowProdsBtnAction" prefHeight="25.0" prefWidth="130.0" text="مشاهده لیست کالا" />
+      <Button fx:id="completeBtn" layoutX="217.0" layoutY="345.0" mnemonicParsing="false" onAction="#onCompleteBtnAction" prefHeight="25.0" prefWidth="130.0" text="تکمیل اظهارنامه" />
+      <Button fx:id="delDeclBtn" layoutX="130.0" layoutY="310.0" mnemonicParsing="false" onAction="#onDelBtnAction" prefHeight="25.0" prefWidth="130.0" text="پاک کردن اظهارنامه" />
+   </children>
+</AnchorPane>
